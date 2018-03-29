@@ -7,11 +7,11 @@
   (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
   )
 
-(setq user-full-name "Bryan W. Roberts"
-      user-mail-address "b.w.roberts@lse.ac.uk"
-      calendar-latitude 51.5
-      calendar-longitude -0.1
-      calendar-location-name "London, UK")
+(setq user-full-name "Josu Armendariz"
+      user-mail-address "josu.armendariz@ing.uchile.cl"
+      calendar-latitude -33.4
+      calendar-longitude -70.7
+      calendar-location-name "Santiago, Chile")
 
 (global-visual-line-mode t)
 
@@ -164,7 +164,6 @@
 \\setlength{\\parindent}{0.5in}
 \\usepackage[nodisplayskipstretch]{setspace}
 \\setstretch{1.5}
-\\input{/bwrtex/BryanCommands}
 \\makeatletter
 \\let\\uppercasenonmath\\@gobble
 \\let\\MakeUppercase\\relax
