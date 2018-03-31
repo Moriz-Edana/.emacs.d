@@ -355,3 +355,15 @@
   "Prevent y-or-n-p from activating a dialog"
   (let ((use-dialog-box nil))
     ad-do-it))
+
+(with-eval-after-load 'ox-latex
+  (append-to-list
+   'org-latex-classes
+   '(("tufte-book"
+      "\\documentclass[a4paper, sfsidenotes, justified, notitlepage]{tufte-book}
+     \\input{/Users/Joso/templates/tufte-book.tex}"
+      ("\\part{%s}" . "\\part*{%s}")
+      ("\\chapter{%s}" . "\\chapter*{%s}")
+      ("\\section{%s}" . "\\section*{%s}")
+      ("\\subsection{%s}" . "\\subsection*{%s}")))))
+
