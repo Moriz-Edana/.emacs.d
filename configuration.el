@@ -156,8 +156,8 @@
 (setq org-export-filter-final-output-functions  '(my-final-filter) )
 
 (add-to-list 'org-latex-classes
-                   '("amsart"
-                     "\\documentclass[a4paper]{amsart}
+                   '("tufte-book"
+               "\\documentclass{tufte-book}
 \\usepackage{amsmath,amssymb,amsthm}
 \\usepackage{graphicx} \\usepackage[left=1.25in,top=1.4in,right=1.25in,bottom=1.4in,head=0.5in,foot=0.5in]{geometry}
 \\usepackage[hidelinks]{hyperref}
@@ -175,7 +175,7 @@
                      ("\\subparagraph{%s}" . "\\subparagraph*{%s}")
                      )
                    )
-      (setq org-latex-default-class "amsart")
+     
 
 (require 'ox-beamer)
 
@@ -355,15 +355,4 @@
   "Prevent y-or-n-p from activating a dialog"
   (let ((use-dialog-box nil))
     ad-do-it))
-
-(with-eval-after-load 'ox-latex
-  (append-to-list
-   'org-latex-classes
-   '(("tufte-book"
-      "\\documentclass[a4paper, sfsidenotes, justified, notitlepage]{tufte-book}
-     \\input{/Users/Joso/templates/tufte-book.tex}"
-      ("\\part{%s}" . "\\part*{%s}")
-      ("\\chapter{%s}" . "\\chapter*{%s}")
-      ("\\section{%s}" . "\\section*{%s}")
-      ("\\subsection{%s}" . "\\subsection*{%s}")))))
 
