@@ -157,17 +157,7 @@
 
 (add-to-list 'org-latex-classes
                    '("tufte-book"
-               "\\documentclass{tufte-book}
-\\usepackage{amsmath,amssymb,amsthm}
-\\usepackage{graphicx} \\usepackage[left=1.25in,top=1.4in,right=1.25in,bottom=1.4in,head=0.5in,foot=0.5in]{geometry}
-\\usepackage[hidelinks]{hyperref}
-\\setlength{\\parindent}{0.5in}
-\\usepackage[nodisplayskipstretch]{setspace}
-\\setstretch{1.5}
-\\makeatletter
-\\let\\uppercasenonmath\\@gobble
-\\let\\MakeUppercase\\relax
-                     "
+               "\\documentclass{tufte-book}"
                      ("\\section{%s}" . "\\section*{%s}")
                      ("\\subsection{%s}" . "\\subsection*{%s}")
                      ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
@@ -187,27 +177,7 @@
                      )
 )
      
-(add-to-list 'org-latex-classes
-                   '("amsart"
-                     "\\documentclass[a4paper]{amsart}
-\\usepackage{amsmath,amssymb,amsthm}
-\\usepackage{graphicx} \\usepackage[left=1.25in,top=1.4in,right=1.25in,bottom=1.4in,head=0.5in,foot=0.5in]{geometry}
-\\usepackage[hidelinks]{hyperref}
-\\setlength{\\parindent}{0.5in}
-\\usepackage[nodisplayskipstretch]{setspace}
-\\setstretch{1.5}
-\\input{/bwrtex/BryanCommands}
-\\makeatletter
-\\let\\uppercasenonmath\\@gobble
-\\let\\MakeUppercase\\relax
-                     "
-                     ("\\section{%s}" . "\\section*{%s}")
-                     ("\\subsection{%s}" . "\\subsection*{%s}")
-                     ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
-                     ("\\paragraph{%s}" . "\\paragraph*{%s}")
-                     ("\\subparagraph{%s}" . "\\subparagraph*{%s}")
-                     )
-)
+
 
 (require 'ox-beamer)
 
