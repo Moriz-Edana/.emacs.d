@@ -164,7 +164,6 @@
 \\setlength{\\parindent}{0.5in}
 \\usepackage[nodisplayskipstretch]{setspace}
 \\setstretch{1.5}
-\\input{/bwrtex/BryanCommands}
 \\makeatletter
 \\let\\uppercasenonmath\\@gobble
 \\let\\MakeUppercase\\relax
