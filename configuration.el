@@ -381,3 +381,10 @@
   (let ((use-dialog-box nil))
     ad-do-it))
 
+(setq pomidor-play-sound-file
+      (lambda (file)
+        (start-process "my-pomidor-play-sound"
+                       nil
+                       "mplayer"
+                       file)))
+
